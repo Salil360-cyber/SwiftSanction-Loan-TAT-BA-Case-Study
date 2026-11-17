@@ -1,0 +1,26 @@
+flowchart LR
+  subgraph Customer
+    A([Apply: app / web / branch / DSA]) --> K[See document checklist for my profile]
+    K --> B[Upload documents]
+    S[Accept sanction letter / e-sign + reminder]
+  end
+  subgraph System
+    B --> U{Upload quality check: readable and complete?}
+    U -- No --> B
+    U -- Yes --> D[Credit bureau check]
+    D --> E{Bureau OK?}
+    E -- No --> X([Rejected])
+    E -- Yes --> L{Low risk? CIBIL 750+, salaried, up to Rs 5 lakh}
+    M[Daily TAT / SLA report + breach alerts]:::new
+  end
+  subgraph Credit[Credit / underwriting]
+    L -- Yes --> FT[Fast-track lane: rule-based decision, spot check]:::new
+    L -- No --> F{Manual review}
+    F -- No --> X
+    F -- Yes --> G[Issue sanction letter]
+    FT --> G
+  end
+  G --> S
+  S --> H[Disbursal]
+  H --> I([Loan disbursed])
+  classDef new fill:#d4edda,stroke:#2e7d32;

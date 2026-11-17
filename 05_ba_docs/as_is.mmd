@@ -1,0 +1,26 @@
+flowchart LR
+  subgraph Customer
+    A([Apply: app / web / branch / DSA]) --> B[Upload documents]
+    R[Re-upload documents]
+    S[Accept sanction letter / e-sign]
+    W([Withdraws: took loan elsewhere]):::bad
+  end
+  subgraph Ops[Loan operations]
+    B --> C{Documents complete and readable?}
+    C -- No: blurred / missing --> R
+    R --> C
+    C -- Yes --> D[Credit bureau check]
+  end
+  subgraph Credit[Credit / underwriting]
+    D --> E{Bureau OK?}
+    E -- No --> X([Rejected])
+    E -- Yes --> Q[Wait in one underwriting queue]
+    Q --> F{Manual review: every file}
+    F -- No --> X
+    F -- Yes --> G[Issue sanction letter]
+  end
+  G --> S
+  S -- Long wait already --> W
+  S --> H[Disbursal]
+  H --> I([Loan disbursed])
+  classDef bad fill:#f8d7da,stroke:#c0392b;

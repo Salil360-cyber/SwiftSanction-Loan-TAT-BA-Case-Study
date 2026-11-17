@@ -1,0 +1,8 @@
+Req ID,Business requirement,User stories,Test cases,Priority,Status
+BR-01,Applicants and DSAs see a document checklist by employment type,US-01;US-03,TC-01;TC-02;TC-03,Must,Draft
+BR-02,Uploads are checked for readability and completeness,US-02;US-03,TC-04;TC-05,Must,Draft
+BR-03,Low-risk applications go through a rule-based fast-track lane with spot checks,US-04;US-05,TC-06;TC-07;TC-08,Must,Draft
+BR-04,Operations get a daily TAT / SLA report and breach alerts,US-06;US-07,TC-09;TC-10,Must,Draft
+BR-05,DSA channel gets a monthly re-request scorecard,US-08,TC-11,Should,Draft
+BR-06,Applicants get e-sign reminders and a status tracker,US-09,TC-12,Should,Draft
+BR-07,Document verification has Sunday cover,US-10,TC-13,Could,Draft
