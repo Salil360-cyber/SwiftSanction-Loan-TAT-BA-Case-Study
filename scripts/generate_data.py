@@ -134,5 +134,5 @@ R.loc[idx, "channel"] = [rng.choice([c.lower(), c.upper(), " " + c + " "]) for c
 R.loc[blank_idx, "employment_type"] = ""
 dups = R.sample(250, random_state=7)
 R = pd.concat([R, dups]).sample(frac=1, random_state=11).reset_index(drop=True)
-R.to_csv("01_data/loan_applications_raw.csv", index=False)
+R.to_csv("01_data/loan_applications_raw.csv", index=False, encoding="utf-8-sig")   # BOM so Excel shows ₹ correctly
 print(len(R), len(A), len(E))

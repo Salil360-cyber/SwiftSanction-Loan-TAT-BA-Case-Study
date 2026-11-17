@@ -20,7 +20,7 @@ Build the Excel, SQL and Power BI parts yourself, then compare your numbers with
 5. Check: filter `channel` shows only Mobile App, Website, Branch, DSA. (**555** values were fixed.)
 
 **A4. Fix `loan_amount`**
-1. New column `amount_clean`: `=VALUE(SUBSTITUTE(SUBSTITUTE(I2,"₹",""),",",""))`.
+1. New column `amount_clean`: `=VALUE(SUBSTITUTE(SUBSTITUTE(I2,UNICHAR(8377),""),",",""))` (`UNICHAR(8377)` is the ₹ sign, so you do not have to type it).
 2. Paste as values over `loan_amount`, delete the helper column, format as Number with 1000 separator. (**400** text amounts fixed.)
 
 **A5. Fill blank `employment_type`**

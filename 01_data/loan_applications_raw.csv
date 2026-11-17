@@ -1,4 +1,4 @@
-application_id,submitted_at,submit_day,channel,branch_city,city_tier,employment_type,cibil_band,loan_amount,last_stage_no,last_stage_name,final_status,close_reason,doc_rerequests,tat_hours
+﻿application_id,submitted_at,submit_day,channel,branch_city,city_tier,employment_type,cibil_band,loan_amount,last_stage_no,last_stage_name,final_status,close_reason,doc_rerequests,tat_hours
 SS07230,2026-03-01 18:01,Sun,Mobile App,Gondia,Tier 3,Self-employed,700-749,280000,6,Disbursal,Disbursed,,0,92.0
 SS01122,2026-04-18 09:11,Sat,Mobile App,Pune,Tier 1,Salaried,700-749,325000,6,Disbursal,Disbursed,,0,102.9
 SS04227,2026-03-19 08:54,Thu,Mobile App,Pune,Tier 1,Salaried,750+,1185000,6,Disbursal,Disbursed,,0,124.1
