@@ -35,6 +35,7 @@ Godavari Finance promises to disburse a personal loan within **72 hours** of the
 | [`03_sql`](03_sql) | PostgreSQL schema, load script, 12 business queries and their results |
 | [`04_powerbi`](04_powerbi) | 2-page dashboard design, Power Query step, DAX measures and page previews |
 | [`05_ba_docs`](05_ba_docs) | Problem statement, RACI, AS-IS / TO-BE flows, 5 Whys, fishbone, gap analysis, MoSCoW, **BRD**, user stories, RTM, UAT cases, impact estimate |
+| [`06_project_plan`](06_project_plan) | Delivery plan for the fixes: project charter, schedule with critical path and Gantt, RAID log, Jira-ready sprint backlog, weekly status report |
 | [`scripts`](scripts) | Data generator, impact estimate, dashboard preview |
 | [`BUILD_GUIDE.md`](BUILD_GUIDE.md) | Step-by-step build of the Excel, SQL and Power BI parts |
 
@@ -47,10 +48,11 @@ Godavari Finance promises to disburse a personal loan within **72 hours** of the
 5. **Define:** AS-IS / TO-BE flows, 5 Whys, fishbone, gap analysis, MoSCoW
 6. **Document:** BRD, 10 user stories with acceptance criteria, RTM, 13 UAT test cases
 7. **Measure:** impact estimate and success KPIs
+8. **Plan delivery:** charter, 14-task schedule (critical path 69 working days), RAID log, 3-sprint backlog and an AMBER status report with a recovery option
 
 ## Tools
 
-Excel · PostgreSQL · Power BI (Power Query, DAX) · Mermaid (process flows)
+Excel · PostgreSQL · Power BI (Power Query, DAX) · Jira (CSV backlog) · Mermaid (process flows)
 
 ## Author
 

@@ -1,0 +1,16 @@
+Summary,Issue Type,Description,Priority,Story Points,Sprint,Labels
+Show document checklist by employment type,Story,"As an applicant, I want to see the documents needed for my employment type, so that I upload everything the first time. (US-01)",High,5,Sprint 1,BR-01
+Block submission when a required document is missing,Story,"Given a required document is missing, when I tap Submit, then submission is blocked and the document is named. (US-01)",High,3,Sprint 1,BR-01
+Checklist on the mobile app,Story,Build the checklist screen in the mobile app.,High,5,Sprint 1,BR-01
+Checklist on the website,Story,Build the checklist screen on the website.,High,3,Sprint 1,BR-01
+Record re-request reason in the loan system,Story,"As an ops manager, I want each re-request reason recorded, so that I can track the top causes.",Medium,3,Sprint 1,BR-01
+Readability check on upload,Story,"Given I upload a blurred image, when the check runs, then I see an error within 5 seconds. (US-02)",High,8,Sprint 2,BR-02
+Bank statement month-count check,Story,"Given a statement has fewer months than needed, when the check runs, then I am told how many are missing. (US-02)",High,5,Sprint 2,BR-02
+Checklist and upload check in the DSA portal,Story,"As a DSA, I want the same checklist and upload check in my portal. (US-03)",High,5,Sprint 2,BR-02
+Error message wording for failed uploads,Task,Agree and add clear messages for each failed check.,Medium,2,Sprint 2,BR-02
+Fast-track routing rules,Story,"Given CIBIL 750+, salaried and amount up to Rs 5 lakh, when the bureau check passes, then the file goes to the fast-track lane. (US-04)",High,8,Sprint 3,BR-03
+Send rule failures to the manual queue,Story,"Given any rule fails, then the file moves to the manual queue with the failed rule named. (US-04)",High,3,Sprint 3,BR-03
+Daily 10% spot-check list for Credit Risk,Story,"Given fast-track decisions are made, when the day ends, then 10% of them are listed for review. (US-05)",High,5,Sprint 3,BR-03
+Audit log of fast-track decisions,Story,Log the rules applied and the result for every fast-track decision.,High,3,Sprint 3,BR-03
+DSA re-request scorecard,Story,"As a DSA channel manager, I want a monthly re-request rate per DSA. (US-08)",Medium,5,,BR-05
+Sanction e-sign reminder and status tracker,Story,"As an applicant, I want a reminder to e-sign and a status tracker. (US-09)",Medium,5,,BR-06
